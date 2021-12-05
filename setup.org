@@ -4,8 +4,6 @@
 #+beamer_inner_theme: circles
 
 #+latex_class_options:[aspectratio=1610,hyperref={colorlinks,unicode,linkcolor=blue,anchorcolor=blue,citecolor=green,filecolor=black,urlcolor=blue}]
-#+subtitle:
-#+latex_compiler: lualatex
 
 #+latex_header: \usepackage{etoolbox}
 #+latex_header: \useoutertheme{infolines}
