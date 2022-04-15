@@ -1,4 +1,13 @@
-\documentclass[aspectratio=1610,hyperref={colorlinks,unicode,linkcolor=blue,anchorcolor=blue,citecolor=green,filecolor=black,urlcolor=blue}]{beamer}
+\documentclass[aspectratio=1610]{beamer}
+
+\hypersetup{
+  unicode,
+  linkcolor=blue,
+  anchorcolor=blue,
+  citecolor=green,
+  filecolor=black,
+  urlcolor=blue
+}
 
 %%%%% PACKAGES HERE
 %% \usepackage{}
@@ -9,75 +18,28 @@
 \usepackage{textcomp}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% DO NOT CHANGE
+%%%%% FIXED
+\input{smile_styles}
+%%%%%
 
-\usetheme{default}
-\useinnertheme{circles}
-\useoutertheme{infolines}
-\usefonttheme{serif}
+%%%%% Bib
+\begin{filecontents}{references.bib}
+  @software{nasy_beamer_2022,
+    title = {Beamer Theme in {SMILE}},
+    url = {https://github.com/uta-smile/beamer-theme},
+    publisher = {uta-smile},
+    author = {Nasy},
+    urldate = {2022-04-15},
+    date = {2022-01-04},
+    note = {original-date: 2021-11-01T19:06:32Z},
+  }
+\end{filecontents}
 
-\usepackage{etoolbox}
-
-%% T for navigation symbols
-%%\setbeamertemplate{navigation symbols}{}
-
-%% T for header
-%% \setbeamertemplate{headline}{%
-%%   \leavevmode%
-%%   \ifdefempty{\insertsubsectionhead}{
-%%     \begin{beamercolorbox}[wd=0.99\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
-%%       % \hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
-%%       \insertsectionhead
-%%     \end{beamercolorbox}%
-%%   }{
-%%     \begin{beamercolorbox}[wd=.44\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
-%%       % \hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
-%%       \insertsectionhead
-%%     \end{beamercolorbox}%
-%%     \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
-%%       % \hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
-%%       -
-%%     \end{beamercolorbox}%
-%%     \begin{beamercolorbox}[wd=.44\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
-%%       % \hbox to .5\paperwidth{\hfil\insertsubsectionhead\hfil}
-%%       \insertsubsectionhead
-%%     \end{beamercolorbox}
-%%   }%
-%% }
-
-%% T for frame title
-\setbeamertemplate{frametitle}{%
-  \usebeamerfont{frametitle}\insertframetitle\strut%
-  \vskip-0\baselineskip%
-  \leaders\vrule width .95\paperwidth\vskip1pt%
-  \vskip0pt%
-  \nointerlineskip
-}
-
-%% T for footer
-\setbeamercolor{footlinecolor}{fg=cyan,bg=green}
-\setbeamercolor{author in head/foot}{fg=blue}
-
-\setbeamertemplate{footline}{%
-  \leavevmode%
-  \hbox{%
-  \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
-    \hspace*{2ex}\usebeamerfont{author in head/foot} Dept. CSE, UT Arlington
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-    \usebeamerfont{title in head/foot}Scalable Modeling \& Imaging \& Learning Lab (SMILE)
-  \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.24\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-    \usebeamerfont{date in head/foot}
-    \insertshortdate{}\hspace*{1em}  % date
-    \insertframenumber/\inserttotalframenumber\hspace*{2ex}
-  \end{beamercolorbox}}%
-  \vskip0pt%
-}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[style=authortitle,backend=biber]{biblatex}
+\addbibresource{references.bib}
 
 
+%%%%% Start from here.
 \title{SMILE example beamer}
 \author{author}
 \date\today
@@ -86,6 +48,8 @@
 
 \begin{frame}[plain]
   \titlepage
+
+  SMILE beamer theme\footcite{nasy_beamer_2022}\footfullcite{nasy_beamer_2022}
 
   // Title page
 \end{frame}

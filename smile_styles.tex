@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% DO NOT CHANGE
+
+\usetheme{default}
+\useinnertheme{circles}
+\useoutertheme{infolines}
+\usefonttheme{serif}
+
+\usepackage{etoolbox}
+
+%% T for navigation symbols
+%%\setbeamertemplate{navigation symbols}{}
+
+%% T for header
+%% \setbeamertemplate{headline}{%
+%%   \leavevmode%
+%%   \ifdefempty{\insertsubsectionhead}{
+%%     \begin{beamercolorbox}[wd=0.99\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+%%       % \hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
+%%       \insertsectionhead
+%%     \end{beamercolorbox}%
+%%   }{
+%%     \begin{beamercolorbox}[wd=.44\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+%%       % \hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
+%%       \insertsectionhead
+%%     \end{beamercolorbox}%
+%%     \begin{beamercolorbox}[wd=.1\paperwidth,ht=2.25ex,dp=1ex,center]{section in head/foot}%
+%%       % \hbox to .5\paperwidth{\hfil\insertsectionhead\hfil}
+%%       -
+%%     \end{beamercolorbox}%
+%%     \begin{beamercolorbox}[wd=.44\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
+%%       % \hbox to .5\paperwidth{\hfil\insertsubsectionhead\hfil}
+%%       \insertsubsectionhead
+%%     \end{beamercolorbox}
+%%   }%
+%% }
+
+%% T for frame title
+\setbeamertemplate{frametitle}{%
+  \usebeamerfont{frametitle}\insertframetitle\strut%
+  \vskip-0\baselineskip%
+  \leaders\vrule width .95\paperwidth\vskip1pt%
+  \vskip0pt%
+  \nointerlineskip
+}
+
+%% T for footer
+\setbeamercolor{footlinecolor}{fg=cyan,bg=green}
+\setbeamercolor{author in head/foot}{fg=blue}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+    \hspace*{2ex}\usebeamerfont{author in head/foot} Dept. CSE, UT Arlington
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    \usebeamerfont{title in head/foot}Scalable Modeling \& Imaging \& Learning Lab (SMILE)
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.24\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}
+    \insertshortdate{}\hspace*{1em}  % date
+    \insertframenumber/\inserttotalframenumber\hspace*{2ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
