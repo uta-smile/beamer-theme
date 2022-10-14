@@ -3,7 +3,7 @@
 #+beamer_font_theme: serif
 #+beamer_inner_theme: circles
 
-#+latex_class_options:[aspectratio=1610,hyperref={colorlinks,unicode,linkcolor=blue,anchorcolor=blue,citecolor=blue,filecolor=black,urlcolor=blue}]
+#+latex_class_options:[aspectratio=1610,xcolor={dvipsnames},hyperref={colorlinks,unicode,linkcolor=violet,anchorcolor=blueviolet,citecolor=YellowOrange,filecolor=black,urlcolor=Aquamarine}]
 
 #+latex_header: \usepackage{etoolbox}
 #+latex_header: \useoutertheme{infolines}
@@ -12,7 +12,7 @@
 #+latex_header:   \vskip-0\baselineskip%
 #+latex_header:   \leaders\vrule width .95\paperwidth\vskip1pt%
 #+latex_header:   \vskip0pt%
-#+latex_header:   \nointerlineskip
+#+latex_header:   \nointerlineskip%
 #+latex_header: }
 #+latex_header:
 #+latex_header: %% T for footer
@@ -34,3 +34,4 @@
 #+latex_header:   \end{beamercolorbox}}%
 #+latex_header:   \vskip0pt%
 #+latex_header: }
+#+latex_header: \setbeamerfont{footnote}{size=\tiny}
