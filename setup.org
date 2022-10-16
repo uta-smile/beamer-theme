@@ -3,35 +3,35 @@
 #+beamer_font_theme: serif
 #+beamer_inner_theme: circles
 
-#+latex_class_options:[aspectratio=1610,xcolor={dvipsnames},hyperref={colorlinks,unicode,linkcolor=violet,anchorcolor=blueviolet,citecolor=YellowOrange,filecolor=black,urlcolor=Aquamarine}]
+#+latex_class_options:[aspectratio=1610,xcolor={dvipsnames},hyperref={colorlinks,unicode,linkcolor=violet,anchorcolor=BlueViolet,citecolor=YellowOrange,filecolor=black,urlcolor=Aquamarine}]
 
-#+latex_header: \usepackage{etoolbox}
-#+latex_header: \useoutertheme{infolines}
-#+latex_header: \setbeamertemplate{frametitle}{%
-#+latex_header:   \usebeamerfont{frametitle}\insertframetitle\strut%
-#+latex_header:   \vskip-0\baselineskip%
-#+latex_header:   \leaders\vrule width .95\paperwidth\vskip1pt%
-#+latex_header:   \vskip0pt%
-#+latex_header:   \nointerlineskip%
-#+latex_header: }
-#+latex_header:
-#+latex_header: %% T for footer
-#+latex_header: \setbeamercolor{footlinecolor}{fg=cyan,bg=green}
-#+latex_header: \setbeamercolor{author in head/foot}{fg=blue}
-#+latex_header: \setbeamertemplate{footline}{%
-#+latex_header:   \leavevmode%
-#+latex_header:   \hbox{%
-#+latex_header:   \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
-#+latex_header:     \hspace*{2ex}\usebeamerfont{author in head/foot} Dept. CSE, UT Arlington
-#+latex_header:   \end{beamercolorbox}%
-#+latex_header:   \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
-#+latex_header:     \usebeamerfont{title in head/foot}Scalable Modeling \& Imaging \& Learning Lab (SMILE)
-#+latex_header:   \end{beamercolorbox}%
-#+latex_header:   \begin{beamercolorbox}[wd=.24\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
-#+latex_header:     \usebeamerfont{date in head/foot}
-#+latex_header:     \insertshortdate{}\hspace*{1em}  % date
-#+latex_header:     \insertframenumber/\inserttotalframenumber\hspace*{2ex}
-#+latex_header:   \end{beamercolorbox}}%
-#+latex_header:   \vskip0pt%
-#+latex_header: }
-#+latex_header: \setbeamerfont{footnote}{size=\tiny}
+#+latex_header_extra: \usepackage{etoolbox}
+#+latex_header_extra: \useoutertheme{infolines}
+#+latex_header_extra: \setbeamertemplate{frametitle}{%
+#+latex_header_extra:   \usebeamerfont{frametitle}\insertframetitle\strut%
+#+latex_header_extra:   \vskip-0\baselineskip%
+#+latex_header_extra:   \leaders\vrule width .95\paperwidth\vskip1pt%
+#+latex_header_extra:   \vskip0pt%
+#+latex_header_extra:   \nointerlineskip%
+#+latex_header_extra: }
+#+latex_header_extra:
+#+latex_header_extra: %% T for footer
+#+latex_header_extra: \setbeamercolor{footlinecolor}{fg=cyan,bg=green}
+#+latex_header_extra: \setbeamercolor{author in head/foot}{fg=blue}
+#+latex_header_extra: \setbeamertemplate{footline}{%
+#+latex_header_extra:   \leavevmode%
+#+latex_header_extra:   \hbox{%
+#+latex_header_extra:   \begin{beamercolorbox}[wd=.26\paperwidth,ht=2.25ex,dp=1ex,left]{author in head/foot}%
+#+latex_header_extra:     \hspace*{2ex}\usebeamerfont{author in head/foot} Dept. CSE, UT Arlington
+#+latex_header_extra:   \end{beamercolorbox}%
+#+latex_header_extra:   \begin{beamercolorbox}[wd=.50\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+#+latex_header_extra:     \usebeamerfont{title in head/foot}Scalable Modeling \& Imaging \& Learning Lab (SMILE)
+#+latex_header_extra:   \end{beamercolorbox}%
+#+latex_header_extra:   \begin{beamercolorbox}[wd=.24\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+#+latex_header_extra:     \usebeamerfont{date in head/foot}
+#+latex_header_extra:     \insertshortdate{}\hspace*{1em}  % date
+#+latex_header_extra:     \insertframenumber/\inserttotalframenumber\hspace*{2ex}
+#+latex_header_extra:   \end{beamercolorbox}}%
+#+latex_header_extra:   \vskip0pt%
+#+latex_header_extra: }
+#+latex_header_extra: \setbeamerfont{footnote}{size=\tiny}
